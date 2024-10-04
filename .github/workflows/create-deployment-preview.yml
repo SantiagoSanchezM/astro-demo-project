@@ -1,0 +1,20 @@
+name: Astronomer CI - Create preview Deployment
+
+on:
+  create:
+    branches:
+      - "**"
+
+env:
+  ## Sets Deployment API Token credentials as environment variables or GitHub Secret depending on your configuration
+  ASTRO_API_TOKEN: ${{ secrets.ASTRO_API_TOKEN }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Create preview Deployment
+      uses: astronomer/deploy-action@v0.7.1
+      with:
+        action: create-deployment-preview
+        deployment-id: clv50p5za034h01ofiozqugpv
