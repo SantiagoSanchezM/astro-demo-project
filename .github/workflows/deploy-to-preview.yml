@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Deploy code to preview
-      uses: astronomer/deploy-action@v0.7.1
+      uses: astronomer/deploy-action@v0.5
       with:
         action: deploy-deployment-preview
         deployment-id: "clv50p5za034h01ofiozqugpv"
