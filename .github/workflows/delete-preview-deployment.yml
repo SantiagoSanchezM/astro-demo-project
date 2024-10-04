@@ -1,0 +1,19 @@
+name: Astronomer CI - Delete Preview Deployment
+
+on:
+  delete:
+    branches:
+      - "**"
+env:
+  ## Set your API token as a GitHub secret
+  ASTRO_API_TOKEN: ${{ secrets.ASTRO_API_TOKEN }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Delete preview Deployment
+      uses: astronomer/deploy-action@v0.7.1
+      with:
+        action: delete-deployment-preview
+        deployment-id: clv50p5za034h01ofiozqugpv
