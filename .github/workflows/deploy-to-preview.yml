@@ -3,7 +3,7 @@ name: Astronomer CI - Deploy code to preview
 on:
   push:
     branches:
-      - "feature-branch-**"
+      - "**-preview-deployment"
 
 env:
   ## Set your API token as a GitHub secret
