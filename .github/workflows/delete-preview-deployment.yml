@@ -16,4 +16,4 @@ jobs:
       uses: astronomer/deploy-action@v0.7.1
       with:
         action: delete-deployment-preview
-        deployment-id: clv50p5za034h01ofiozqugpv
+        deployment-id: "clv50p5za034h01ofiozqugpv"
