@@ -12,6 +12,7 @@ env:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/main' && github.ref != 'refs/heads/main' && github.event.created != true
     steps:
     - name: Deploy code to preview
       uses: astronomer/deploy-action@v0.7.1
