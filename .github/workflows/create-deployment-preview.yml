@@ -1,9 +1,7 @@
 name: Astronomer CI - Create preview Deployment
 
 on:
-  create:
-    branches:
-      - "**"
+  create
 
 env:
   ## Sets Deployment API Token credentials as environment variables or GitHub Secret depending on your configuration
